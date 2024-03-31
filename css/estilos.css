@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 /*header*/
 
@@ -72,7 +73,7 @@ body {
   background-image: url("../images/Rectangle\ 8.png");
   background-size: cover;
   background-repeat: no-repeat;
-
+  background-color: var(--dark-blue-100);
   padding: 250px 75px 100px 75px;
   color: var(--ligth-white-100);
 }
@@ -102,6 +103,64 @@ body {
 }
 
 /*section2*/
+
+.main__section2 {
+  padding: 150px 150px;
+  justify-content: space-between;
+  background-color: var(--dark-blue-100);
+  color: var(--ligth-white-100);
+  flex-wrap: wrap;
+}
+
+.main__section2--gallery {
+  position: relative;
+  padding: 50px;
+  /* justify-content: center; */
+  /* display: flex; */
+}
+
+.main__section2--gallery div:not(:first-child) {
+  position: absolute;
+}
+
+.main__section2--gallery div:first-child {
+  z-index: 3;
+  position: relative;
+}
+.main__section2--gallery div:nth-child(2) {
+  right: -30%;
+  top: -10%;
+  z-index: 2;
+}
+
+.main__section2--gallery div:last-child {
+  z-index: 1;
+  bottom: -20%;
+  right: -35%;
+}
+
+.main__section2--about {
+  width: 50%;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 30px;
+  text-align: justify;
+  padding: 25px;
+}
+
+.main__section2--about h2 {
+  font-size: var(--txt-2);
+  font-weight: 800;
+}
+.main__section2--about p {
+  font-weight: 300;
+  font-size: var(--txt-3);
+}
+
+.main__section2--about span {
+  font-weight: 800;
+  font-size: var(--txt-3);
+}
 /*section3*/
 
 /*footer*/

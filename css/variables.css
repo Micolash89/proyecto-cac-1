@@ -1,5 +1,5 @@
 :root {
-  --dark-grey-100: #0d121e;
+  --dark-blue-100: #0d121e;
 
   --dark-black-100: #080b16;
 
@@ -12,4 +12,6 @@
   --dark-red-100: #670000;
 
   --txt-1: 2.75rem; /*44px*/
+  --txt-2: 2.5rem; /*40px*/
+  --txt-3: 1rem; /*16px*/
 }

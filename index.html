@@ -12,30 +12,153 @@
     <header class="header">
         <nav class="header__nav">
             <ul class="header__nav--menu ulnav">
-                <li><a href="#inicio">inicio</a>
-                <li><a href="#inicio">inicio</a>
-                <li><a href="#inicio">inicio</a>
-                <li><a href="#inicio">inicio</a>
-                <li><a href="#inicio">inicio</a>
+                <li class="ulnav__li"><a href="#inicio"><img src="images/logo-blue 1.png" alt="logo"></a>
+                </li>
+                <li class="ulnav__li"><a href="#inicio">inicio</a>
+                </li>
+                <li class="ulnav__li"><a href="#inicio">inicio</a>
+                </li>
+                <li class="ulnav__li"><a href="#inicio">inicio</a>
+                </li>
+                <li class="ulnav__li"><a href="#inicio">inicio</a>
+                </li>
             </ul>
-            <a href=""><button>agendar Horario</button></a>
+            <a href="" class="header__nav--a"><button>agendar Horario</button></a>
         </nav>
 
     </header>
 
     <main class="main">
+
         <section class="main__section1">
             <h1 class="main__section1--h1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aliquid.
             </h1>
             <p class="main__section1--p">Lorem ipsum dolor sit amet consectetur.</p>
             <button class="main__section1--button">Lorem, ipsum.</button>
         </section>
-        <section>
 
+        <section class="main__section2 flexRow">
+            <div class="main__section2--gallery ">
+                <div>
+                    <img src="images/Rectangle 10.png" alt="imagen1">
+                </div>
+                <div>
+                    <img src="images/Rectangle 11.png" alt="imagen2">
+                </div>
+                <div>
+                    <img src="images/Rectangle 12.png" alt="imagen3">
+                </div>
+            </div>
+            <div class="main__section2--about flexColum">
+                <h2>Sobre</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deleniti adipisci commodi temporibus
+                    quas maiores laboriosam dignissimos, nam facilis ipsa velit libero numquam saepe. Porro odio
+                    blanditiis voluptas architecto natus!</p>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, natus.</span>
+            </div>
+        </section>
+
+        <section class="main__section3 flexColum">
+            <h2 class="main__section3--h2">Servicios</h2>
+            <p class="main__section4--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magni
+                necessitatibus deserunt distinctio!
+                Minima, voluptate labore! Animi rerum quis sed?</p>
+
+            <div class="main__section4--div service flexRow">
+                <div class="service__cards">
+                    <div class="service__cards--img"><img src="images/Serviço 1 (1).png" alt=""></div>
+                    <div class="service__cards--description">
+                        <span>corde de cabello</span>
+                        <span>$100</span>
+                    </div>
+                </div>
+                <div class="service__cards">
+                    <div class="service__cards--img"><img src="images/Serviço 1 (2).png" alt=""></div>
+                    <div class="service__cards--description">
+                        <span>corde de cabello</span>
+                        <span>$100</span>
+                    </div>
+                </div>
+                <div class="service__cards">
+                    <div class="service__cards--img"><img src="images/Serviço 1.png" alt=""></div>
+                    <div class="service__cards--description">
+                        <span>corde de cabello</span>
+                        <span>$100</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__section4 flexRow">
+            <h2 class="main__section4--h2">nuestro equipo</h2>
+            <div class="main__section4--div ms4d flexRow">
+                <div class="ms4d__card">
+                    <div class="ms4d__card--img"><img src="images/Rectangle 17.png" alt="">
+                        <span class="ms4d__card--equipo">Lucas Silva</span>
+                    </div>
+                    <div class="ms4d__card--iconos"></div>
+                </div>
+
+                <div class="ms4d__card">
+                    <div class="ms4d__card--img"><img src="images/Rectangle 18.png" alt="">
+                        <span class="ms4d__card--equipo">Lucas Silva</span>
+                    </div>
+                    <div class="ms4d__card--iconos"></div>
+                </div>
+
+                <div class="ms4d__card">
+                    <div class="ms4d__card--img"><img src="images/Rectangle 19.png" alt="">
+                        <span class="ms4d__card--equipo">Lucas Silva</span>
+                    </div>
+                    <div class="ms4d__card--iconos"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="main__contacto">
+            <h2>Reservar turno</h2>
+            <form class="main__contacto--form form flexColum" action="" method="post">
+                <div class="flexColum">
+
+
+                    <label class="form__" for="">
+                        <input type="text">nombre
+                    </label>
+
+                    <label class="form__" for="">
+                        <input type="text">apellido
+                    </label>
+
+                    <label class="form__" for="">
+                        <input type="text">algo
+                    </label>
+
+                    <label class="form__" for="">
+                        <input type="text">algo
+                    </label>
+
+                    <label class="form__" for="">
+                        <input type="text">alog
+                    </label>
+                </div>
+                <div class="form__btn btn">
+                    <button type="submit">enviar</button>
+                    <button type="reset">borrar formulario</button>
+                </div>
+            </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+
+        <section class="footer__detallesLegales">
+            © 2024 - Team J - Todos los derechos reservados.
+
+        </section>
+        <section class="footer__redesSociales">
+            <!-- iconos -->
+        </section>
 
     </footer>
 

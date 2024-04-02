@@ -193,6 +193,20 @@ button {
   border-radius: var(--radius-1);
   box-shadow: 4px 5px 8px 0px rgba(0, 0, 0, 0.35);
 }
+
+.service__cards--img {
+  overflow: hidden;
+  border-radius: var(--radius-2) var(--radius-2) 0 0;
+}
+
+.service__cards--img > img {
+  transition: scale 0.7s;
+}
+
+.service__cards--img > img:hover {
+  scale: 1.2;
+}
+
 .main__section3--div {
   gap: 25px;
 }
@@ -215,6 +229,79 @@ button {
   border-radius: var(--radius-2);
 }
 
+/*section4*/
+
+.main__section4 {
+  padding: 100px 70px;
+  background-color: var(--dark-black-100);
+  align-items: center;
+  justify-content: center;
+}
+
+.main__section4--div {
+  gap: 30px;
+}
+
+.ms4h2container {
+  /* rotate: -90deg; */
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+div > .main__section4--h2 {
+  rotate: -90deg;
+  /* color: white; */
+  left: -170px;
+  min-width: max-content;
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: var(--txt-1);
+  color: var(--ligth-blue-100);
+  /* margin-top: 120px; */
+  /* line-height: 6; */
+
+  /* width: ; */
+}
+
+.ms4d__card--img {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-2);
+}
+
+.ms4d__card--img > img {
+  transition: scale 0.7s;
+}
+
+.ms4d__card--img > img:hover {
+  scale: 1.1;
+}
+
+.ms4d__card--equipo {
+  position: absolute;
+  bottom: calc(50% - 150px);
+  left: calc(50% - 30px);
+  color: var(--ligth-gold-100);
+  font-weight: 700;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--txt-3);
+}
+
+.ms4d__card--iconos {
+  padding: 10px 0;
+  justify-content: space-evenly;
+  font-size: var(--txt-4);
+  color: var(--ligth-white-100);
+}
+
+.ms4d__card--iconos > i:hover {
+  cursor: pointer;
+}
 /*footer*/
 .footer {
   justify-content: space-between;

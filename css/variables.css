@@ -1,6 +1,8 @@
 :root {
   --dark-blue-100: #0d121e;
 
+  --ligth-blue-100: #636a86;
+
   --dark-black-100: #080b16;
 
   --ligth-gold-100: #f0b35b;
@@ -14,6 +16,7 @@
   --txt-1: 2.75rem; /*44px*/
   --txt-2: 2.5rem; /*40px*/
   --txt-3: 1rem; /*16px*/
+  --txt-4: 1.5rem; /*24px*/
 
   --radius-1: 16px;
   --radius-2: 8px;

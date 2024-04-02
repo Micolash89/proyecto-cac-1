@@ -8,6 +8,10 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100%;
 }
+
+button {
+  font-family: "Poppins", sans-serif;
+}
 /*header*/
 
 .header {
@@ -54,7 +58,7 @@ body {
   border-radius: 10px;
   background-color: var(--ligth-gold-100);
   color: var(--dark-grey-100);
-  font-family: "Poppins", sans-serif;
+
   font-weight: bold;
   margin-top: 20px;
   transition: box-shadow 0.4s;
@@ -95,6 +99,7 @@ body {
   font-weight: bold;
   margin-top: 20px;
   transition: box-shadow 0.4s;
+  color: var(--dark-black-100);
 }
 
 .main__section1--button:hover {
@@ -163,4 +168,67 @@ body {
 }
 /*section3*/
 
+.main__section3 {
+  align-items: center;
+  padding: 100px 50px;
+  gap: 15px;
+}
+
+.main__section3--h2 {
+  font-size: var(--txt-2);
+  font-weight: 700;
+}
+
+.main__section3--p {
+  width: 50%;
+  text-align: center;
+  font-size: var(--txt-3);
+}
+
+.service {
+  gap: 20px;
+}
+
+.service__cards {
+  border-radius: var(--radius-1);
+  box-shadow: 4px 5px 8px 0px rgba(0, 0, 0, 0.35);
+}
+.main__section3--div {
+  gap: 25px;
+}
+
+.service__cards--description {
+  padding: 10px 15px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.service__cards--description > span:first-child {
+  font-weight: 600;
+}
+
+.service__cards--description > span:last-child {
+  padding: 3px 7px;
+  background-color: var(--dark-black-100);
+  color: var(--ligth-white-100);
+  border-radius: var(--radius-2);
+}
+
 /*footer*/
+.footer {
+  justify-content: space-between;
+  padding: 35px 50px;
+  background-color: var(--dark-red-100);
+  align-items: center;
+  /* font-size: var(--txt-); */
+  font-size: 20px;
+}
+
+.footer__logo > img {
+  width: 50%;
+}
+
+.footer__redesSociales {
+  gap: 50px;
+}

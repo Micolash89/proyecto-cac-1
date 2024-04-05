@@ -134,35 +134,64 @@
 
         </section>
 
-        <section class="main__contacto">
-            <h2>Reservar turno</h2>
+        <section class="main__contacto flexColum">
+            <h2 class="main__contacto--h2">Agendar Horário</h2>
             <form class="main__contacto--form form flexColum" action="" method="post">
                 <div class="flexColum">
 
 
-                    <label class="form__" for="">
-                        <input type="text">nombre
+                    <label class="form__label flexColum" for="">
+                        <input type="text">
+                        <span>
+                            nombre Completo
+                        </span>
                     </label>
 
-                    <label class="form__" for="">
-                        <input type="text">apellido
+                    <label class="form__label flexColum" for="">
+                        <input type="date"> <span>
+                            Selecciona una fecha
+                        </span>
                     </label>
 
-                    <label class="form__" for="">
-                        <input type="text">algo
+                    <label class="form__label flexColum" for="">
+                        <input type="text"> <span>
+                            algo
+                        </span>
                     </label>
 
-                    <label class="form__" for="">
-                        <input type="text">algo
-                    </label>
+                    <div class="flexRow">
 
-                    <label class="form__" for="">
-                        <input type="text">alog
+                        <label class="form__label flexColum" for="">
+                            <input type="radio"> <span>
+                                algo
+                            </span>
+                        </label>
+                        <label class="form__label flexColum" for="">
+                            <input type="radio"> <span>
+                                algo
+                            </span>
+                        </label>
+                        <label class="form__label flexColum" for="">
+                            <input type="radio"> <span>
+                                algo
+                            </span>
+                        </label>
+                        <label class="form__label flexColum" for="">
+                            <input type="radio"> <span>
+                                algo
+                            </span>
+                        </label>
+                    </div>
+
+                    <label class="form__label flexColum" for="">
+                        <input type="text"> <span>
+                            alog
+                        </span>
                     </label>
                 </div>
-                <div class="form__btn btn">
+                <div class="form__btn flexColum">
                     <button type="submit">enviar</button>
-                    <button type="reset">borrar formulario</button>
+                    <button type="reset">reset</button>
                 </div>
             </form>
         </section>
@@ -174,7 +203,10 @@
             © 2024 - Team J
 
         </section>
-        <section class="footer__logo"><img src="images/logo-blue 1.png" alt="logo imagen"></section>
+        <section class="footer__logo"><a href="#">
+                <img src="images/logo-blue 1.png" alt="logo imagen">
+            </a>
+        </section>
         <section class="footer__redesSociales flexRow">
             <!-- iconos -->
             <i class="fa-brands fa-instagram"></i>

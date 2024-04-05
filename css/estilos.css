@@ -299,23 +299,94 @@ div > .main__section4--h2 {
   color: var(--ligth-white-100);
 }
 
+.ms4d__card--iconos i:hover {
+  color: var(--dark-red-100);
+}
+
 .ms4d__card--iconos > i:hover {
   cursor: pointer;
 }
+
+/*formulario contacto*/
+
+.main__contacto {
+  padding: 100px 50px;
+  width: 100%;
+  background-color: var(--dark-black-100);
+  color: var(--ligth-white-100);
+}
+
+.main__contacto--h2 {
+  font-size: var(--txt-5);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.form {
+  align-items: center;
+  gap: 15px;
+}
+
+.form > div:first-child {
+  width: 30%;
+}
+.form > div:first-child > .form__label > input {
+  border-radius: var(--radius-2);
+  padding: 15px;
+}
+
+.form__btn {
+  gap: 15px;
+  width: 30%;
+}
+
+.form__btn button {
+  /* max-width: 250px; */
+  padding: 10px;
+  border-radius: var(--radius-2);
+  background-color: var(--ligth-gold-100);
+  font-weight: 700;
+  font-size: var(--txt-3);
+  transition: box-shadow 0.6s;
+}
+
+.form__btn button:hover {
+  cursor: pointer;
+  box-shadow: 7px 7px 10px 2px var(--ligth-gold-200);
+}
+
 /*footer*/
 .footer {
+  color: var(--ligth-white-100);
   justify-content: space-between;
-  padding: 35px 50px;
-  background-color: var(--dark-red-100);
+  padding: 75px 50px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(103, 0, 0, 1) 100%
+  );
   align-items: center;
   /* font-size: var(--txt-); */
   font-size: 20px;
 }
 
-.footer__logo > img {
+.footer__logo > a > img {
   width: 50%;
+
+  filter: brightness(0) invert(1);
+}
+.footer__logo > a > img {
+  width: fit-content;
 }
 
 .footer__redesSociales {
   gap: 50px;
+  font-size: var(--txt-5);
+}
+
+.footer__redesSociales i:hover {
+  cursor: pointer;
+  color: var(--ligth-gold-100);
 }

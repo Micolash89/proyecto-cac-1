@@ -9,7 +9,8 @@ body {
   width: 100%;
 }
 
-button {
+button,
+input {
   font-family: "Poppins", sans-serif;
 }
 /*header*/
@@ -124,15 +125,81 @@ button {
   /* display: flex; */
 }
 
+.main__section2--gallery > div:first-child {
+  position: relative;
+  animation-name: img1;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img1 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.main__section2--gallery > div:nth-child(2) {
+  /* position: relative; */
+  animation-name: img2;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img2 {
+  0% {
+    right: -30%;
+    top: -10%;
+  }
+  50% {
+    right: 0%;
+    top: 0%;
+  }
+  100% {
+    right: -30%;
+    top: -10%;
+  }
+}
+
+.main__section2--gallery > div:last-child {
+  /* position: relative; */
+  animation-name: img3;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img3 {
+  0% {
+    bottom: -20%;
+    right: -35%;
+  }
+  50% {
+    bottom: 20%;
+    right: 35%;
+  }
+  100% {
+    bottom: -20%;
+    right: -35%;
+  }
+}
+
 .main__section2--gallery div:not(:first-child) {
   position: absolute;
 }
 
-.main__section2--gallery div:first-child {
+.main__section2--gallery > div:first-child {
   z-index: 3;
   position: relative;
 }
-.main__section2--gallery div:nth-child(2) {
+.main__section2--gallery > div:nth-child(2) {
   right: -30%;
   top: -10%;
   z-index: 2;
@@ -323,17 +390,55 @@ div > .main__section4--h2 {
   margin: 30px 0;
 }
 
+.main__contacto--form > div {
+  gap: 20px;
+}
+
 .form {
   align-items: center;
   gap: 15px;
 }
 
 .form > div:first-child {
-  width: 30%;
+  width: 40%;
 }
-.form > div:first-child > .form__label > input {
+
+.form__label {
   border-radius: var(--radius-2);
-  padding: 15px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.form__label > span {
+  position: absolute;
+  bottom: 14px;
+  left: 10px;
+  display: flex;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-weight: 500;
+  color: var(--dark-black-100);
+}
+
+.form__label > input {
+  border: 1px solid var(--ligth-white-100);
+  padding: 7px;
+  font-size: var(--txt-3);
+  border-radius: var(--radius-2);
+}
+.form__label:nth-child(2) > input ~ span,
+.form__label > input:valid ~ span,
+.form__label > input:focus ~ span {
+  transform: translateX(0) translateY(-23px);
+  font-size: var(--txt-6);
+  background-color: var(--ligth-white-100) !important;
+  padding: 0 3px;
+  border-left: 1px solid var(--dark-black-100);
+  border-right: 1px solid var(--dark-black-100);
 }
 
 .form__btn {
@@ -354,6 +459,9 @@ div > .main__section4--h2 {
 .form__btn button:hover {
   cursor: pointer;
   box-shadow: 7px 7px 10px 2px var(--ligth-gold-200);
+}
+
+.form__label {
 }
 
 /*footer*/

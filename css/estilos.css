@@ -436,12 +436,13 @@ div > .main__section4--h2 {
   display: flex;
   pointer-events: none;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: all 0.5s;
   font-weight: 500;
   color: var(--dark-black-100);
 }
 
-.form__label > input {
+.form__label > input,
+.form__label > select {
   border: 1px solid var(--ligth-white-100);
   padding: 7px;
   font-size: var(--txt-3);
@@ -450,12 +451,13 @@ div > .main__section4--h2 {
 .form__label:nth-child(2) > input ~ span,
 .form__label > input:valid ~ span,
 .form__label > input:focus ~ span {
-  transform: translateX(0) translateY(-23px);
+  transform: translateX(0) translateY(-34px);
   font-size: var(--txt-6);
-  background-color: var(--ligth-white-100) !important;
+  /* background-color: var(--ligth-white-100) !important; */
   padding: 0 3px;
-  border-left: 1px solid var(--dark-black-100);
-  border-right: 1px solid var(--dark-black-100);
+  /* border-left: 1px solid var(--dark-black-100);
+  border-right: 1px solid var(--dark-black-100); */
+  color: var(--ligth-white-100);
 }
 
 .form__btn {
@@ -478,7 +480,29 @@ div > .main__section4--h2 {
   box-shadow: 7px 7px 10px 2px var(--ligth-gold-200);
 }
 
-.form__label {
+.radio__container {
+  justify-content: space-between;
+}
+
+.radio__container > input {
+  display: none;
+}
+
+.form__label--radio {
+  padding: 7px 15px;
+  border: 1px solid var(--ligth-white-300);
+  border-radius: var(--radius-2);
+  cursor: pointer;
+}
+input:checked + .form__label--radio {
+  background-color: var(--ligth-gold-300);
+  color: var(--dark-black-100);
+}
+
+.form__label > select {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--dark-black-100);
 }
 
 /*footer*/

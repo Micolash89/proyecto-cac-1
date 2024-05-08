@@ -177,35 +177,51 @@
                         </span>
                     </label>
 
-                    <div class="flexRow">
+                    <div class="radio__container flexRow">
+                        <input name="horario" value="9:00" type="radio" id="horario1">
 
-                        <label class="form__label--radio flexColum" for="">
-                            <input type="radio"> <span>
-                                algo
+                        <label class="form__label--radio flexColum" for="horario1">
+                            <span>
+                                09:00 AM
                             </span>
                         </label>
-                        <label class="form__label--radio flexColum" for="">
-                            <input type="radio"> <span>
-                                algo
+
+                        <input name="horario" id="horario2" value="10:00" type="radio">
+                        <label class="form__label--radio flexColum" for="horario2">
+                            <span>
+                                10:00 AM
                             </span>
                         </label>
-                        <label class="form__label--radio flexColum" for="">
-                            <input type="radio"> <span>
-                                algo
+
+                        <input name="horario" id="horario3" value="11:00" type="radio">
+                        <label class="form__label--radio flexColum" for="horario3">
+                            <span>
+                                11:00 AM
                             </span>
                         </label>
-                        <label class="form__label--radio flexColum" for="">
-                            <input type="radio"> <span>
-                                algo
+
+                        <input name="horario" id="horario4" value="12:00" type="radio">
+
+                        <label class="form__label--radio flexColum" for="horario4">
+                            <span>
+                                12:00 PM
                             </span>
                         </label>
                     </div>
 
-                    <label class="form__label flexColum" for="">
-                        <input required type="text"> <span>
-                            alog
-                        </span>
+                    <label class="form__label flexColum" for="sucursal">
+                        <select id="sucursal" required name="sucursal">
+                            <option value="0" selected hidden>Selecciona una sucursal</option>
+                            <option value="1">CABA</option>
+                            <option value="2">Bs AS - Zona Oeste</option>
+                            <option value="3">Bs AS - Zona Sur</option>
+                            <option value="4">Bs AS - Zona Norte</option>
+
+
+                        </select>
                     </label>
+
+
                 </div>
                 <div class="form__btn flexColum">
                     <button type="submit">enviar</button>

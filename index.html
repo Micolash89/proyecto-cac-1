@@ -12,20 +12,24 @@
     <header class="header">
         <nav class="header__nav">
             <ul class="header__nav--menu ulnav">
-                <li class="ulnav__li"> <a href="#inicio"><img src="images/logo-blue 1.png" alt="logo"></a>
+                <li class="ulnav__li">
+                    <a href="#inicio"><img src="images/logo-blue 1.png" alt="logo"></a>
                 </li>
-                <li class="ulnav__li"><a href="#about_us">Sobre Nosotros</a>
+                <li class="ulnav__li">
+                    <a href="#about_us">Sobre Nosotros</a>
                 </li>
-                <li class="ulnav__li"><a href="#services">Servicios</a>
+                <li class="ulnav__li">
+                    <a href="#services">Servicios</a>
                 </li>
-                <li class="ulnav__li"><a href="#team">Nuestro Equipo</a>
+                <li class="ulnav__li">
+                    <a href="#team">Nuestro Equipo</a>
                 </li>
-                <li class="ulnav__li"><a href="#contact">Agendar Horario</a>
+                <li class="ulnav__li">
+                    <a href="#contact">Agendar Horario</a>
                 </li>
             </ul>
-            <a href="" class="header__nav--a"><button>agendar Horario</button></a>
+            <a href="#contact" class="header__nav--a"><button>agendar Horario</button></a>
         </nav>
-
     </header>
 
     <main class="main">
@@ -36,7 +40,7 @@
             <p class="main__section1--p">Lorem ipsum dolor sit amet consectetur.</p>
             <button class="main__section1--button">Lorem, ipsum.</button>
 
-            <iframe width="100%" height="100%"
+            <iframe width="100%"
                 src="https://www.youtube.com/embed/LeTzulPE2y8?si=8CeSFJxA3pSBtHGh&amp;controls=0&amp;autoplay=1&amp;loop=1&amp;playlist=LeTzulPE2y8"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -44,7 +48,7 @@
 
         </section>
 
-        <section class="main__section2 flexRow" id="about_us">
+        <section class=" flexRow main__section2" id="about_us">
             <div class="main__section2--gallery ">
                 <div class="card__gallery">
                     <figure>
@@ -68,7 +72,7 @@
                 </div>
             </div>
             <div class="main__section2--about flexColum">
-                <h2>Sobre</h2>
+                <h2>Sobre Nosotros</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deleniti adipisci commodi temporibus
                     quas maiores laboriosam dignissimos, nam facilis ipsa velit libero numquam saepe. Porro odio
                     blanditiis voluptas architecto natus!</p>
@@ -85,7 +89,7 @@
                 necessitatibus deserunt distinctio!
                 Minima, voluptate labore! Animi rerum quis sed?</p>
 
-            <div class="main__section3--div  flexRow">
+            <div class=" flexRow main__section3--div ">
                 <div class="service__cards flexColum">
                     <div class="service__cards--img"><img loading="lazy" src="images/Serviço 1 (1).png" alt=""></div>
                     <div class="service__cards--description flexRow">
@@ -110,10 +114,9 @@
             </div>
         </section>
 
-        <section class="main__section4 flexRow" id="team">
+        <section class="flexRow main__section4 " id="team">
             <div class="ms4h2container">
                 <h2 class="main__section4--h2">nuestro equipo</h2>
-
             </div>
             <div class="main__section4--div ms4d flexRow">
                 <div class="ms4d__card flexColum">
@@ -158,22 +161,16 @@
                 <div class="flexColum">
 
 
-                    <label class="form__label flexColum" for="">
-                        <input required type="text">
+                    <label class="form__label flexColum" for="firstName_lastName">
+                        <input required type="text" id="firstName_lastName">
                         <span>
                             nombre Completo
                         </span>
                     </label>
 
-                    <label class="form__label flexColum" for="">
-                        <input required type="date"> <span>
+                    <label class="form__label flexColum" for="date">
+                        <input required type="date" id="date"> <span>
                             Selecciona una fecha
-                        </span>
-                    </label>
-
-                    <label class="form__label flexColum" for="">
-                        <input required type="text"> <span>
-                            algo
                         </span>
                     </label>
 
@@ -220,7 +217,12 @@
 
                         </select>
                     </label>
-
+                    <label class="form__label--promotions flexRow" for="promotions">
+                        <input required type="checkbox" id="promotions">
+                        <span>
+                            Recibir promociones
+                        </span>
+                    </label>
 
                 </div>
                 <div class="form__btn flexColum">
@@ -231,7 +233,7 @@
         </section>
     </main>
 
-    <footer class="footer flexRow">
+    <footer class=" flexRow footer">
 
         <section class="footer__detallesLegales">
             © 2024 - Team J

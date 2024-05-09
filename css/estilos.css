@@ -7,6 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
+  background-color: var(--dark-black-100);
 }
 
 button,
@@ -119,7 +120,9 @@ html {
   left: 0;
   z-index: -1;
   width: 100%;
+  height: 100%;
   /* opacity: 0.5; */
+  overflow: hidden;
   pointer-events: none;
 }
 
@@ -194,7 +197,7 @@ html {
   position: relative;
   left: 10%;
   top: 30%;
-  width: 7.5rem;
+  width: 7rem;
   height: 10rem;
   background: var(--bg-card);
   border-radius: 0.5rem;
@@ -215,17 +218,18 @@ html {
 }
 
 .card__gallery:hover ~ .card__gallery {
-  left: 5rem;
+  left: 3rem;
 }
 
 .card__gallery img {
   height: 10rem;
   object-fit: cover;
+  width: 100%;
   border-radius: 0.25rem;
 }
 
 .main__section2--gallery:hover > :not(:hover) {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .main__section2--about {
@@ -256,6 +260,7 @@ html {
   align-items: center;
   padding: 100px 50px;
   gap: 15px;
+  background-color: var(--ligth-white-100);
 }
 
 .main__section3--h2 {
@@ -462,7 +467,7 @@ div > .main__section4--h2 {
 
 .form__btn {
   gap: 15px;
-  width: 30%;
+  width: 150px;
 }
 
 .form__btn button {
@@ -538,4 +543,166 @@ input:checked + .form__label--radio {
 .footer__redesSociales i:hover {
   cursor: pointer;
   color: var(--ligth-gold-100);
+}
+
+@media (max-width: 1204px) {
+  .main__section2 {
+    padding: 50px;
+  }
+}
+@media (max-width: 1136px) {
+  .main__section1 {
+    padding: 50px;
+  }
+
+  .main__section1--h1 {
+    font-size: var(--txt-4);
+  }
+
+  .main__section4 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main__section4--div {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ms4d__card {
+    max-width: 250px;
+  }
+
+  .ms4h2container {
+    /* rotate: -90deg; */
+    width: 100%;
+    height: 50px;
+    position: static;
+    text-align: center;
+  }
+
+  div > .main__section4--h2 {
+    rotate: 0deg;
+    /* color: white; */
+    text-align: center;
+    position: static;
+    min-width: max-content;
+  }
+
+  .ms4d__card--equipo {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+  }
+}
+
+@media (max-width: 934px) {
+  .main__section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__section2--about {
+    width: 100%;
+  }
+
+  .main__section2--gallery {
+    order: 2;
+  }
+
+  .main__section2--about {
+    order: 1;
+  }
+
+  .form > div:first-child {
+    width: 100%;
+  }
+}
+
+@media (max-width: 838px) {
+  .header__nav {
+    justify-content: center;
+  }
+
+  .ulnav__li:first-child {
+    display: none !important;
+  }
+
+  .header__nav--a {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .main__section3--div {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__section3 {
+    padding: 15px;
+  }
+
+  .main__section3--p {
+    width: 100%;
+  }
+
+  .service__cards {
+    max-width: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .main__section2 {
+    padding: 40px 0;
+  }
+
+  .card__gallery {
+    left: 0;
+    width: 100%;
+  }
+
+  .card__gallery:hover {
+    transform: translateY(2rem);
+    font-weight: bold;
+    cursor: pointer;
+    scale: 1.2;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 488px) {
+  .main__section1 {
+    padding: 15px 0;
+    margin: 10px 0;
+  }
+
+  .main__section1--h1 {
+    font-size: var(--txt-3);
+  }
+
+  .main__section1--button {
+    padding: 15px;
+  }
+
+  .main__section4 {
+    padding: 15px 0;
+  }
+
+  .main__section4--h2 {
+    font-size: var(--txt-5) !important;
+  }
+
+  .main__contacto {
+    padding: 50px 5px;
+  }
+
+  .form > div:last-child {
+    width: 100%;
+  }
 }

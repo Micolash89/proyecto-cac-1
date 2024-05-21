@@ -2,8 +2,6 @@
 @import url("variables.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/*font-family: "Poppins", sans-serif;*/
-
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -39,11 +37,6 @@ html {
   align-items: center;
 }
 
-.ulnav__li:first-child a img {
-  /* width: 50%; */
-  /* overflow: hidden; */
-}
-
 .ulnav__li a {
   color: var(--ligth-white-100);
 }
@@ -52,7 +45,6 @@ html {
   filter: brightness(0) invert(1);
   display: block;
   overflow: hidden;
-  /* border: 1px solid #ce1818; */
 }
 
 .ulnav .ulnav__li:first-child {
@@ -62,22 +54,22 @@ html {
 
 /*animacion botton*/
 .ulnav__li a {
-  position: relative; /* Establece la posición relativa para que el pseudo-elemento ::after se posicione correctamente */
+  position: relative;
 }
 
 .ulnav__li a::after {
   content: ""; /* Añade contenido al pseudo-elemento */
-  position: absolute; /* Establece la posición absoluta para que se pueda posicionar en relación con el elemento padre */
-  bottom: -10px; /* Lo posiciona en la parte inferior del botón */
-  left: 0; /* Lo posiciona en el lado izquierdo del botón */
-  width: 0; /* Inicialmente establece la anchura a cero para que no sea visible */
-  height: 4px; /* Establece la altura de la línea */
-  background-color: var(--dark-red-100); /* Color de la línea */
-  transition: width 0.3s; /* Añade una transición a la propiedad width para crear el efecto de animación */
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--dark-red-100);
+  transition: width 0.3s;
 }
 
 .ulnav__li a:hover::after {
-  width: 100%; /* Cuando se pasa el ratón sobre el enlace, aumenta la anchura de la línea al 100% */
+  width: 100%;
 }
 
 .header__nav--a button {
@@ -115,13 +107,11 @@ html {
 .main__section1 > iframe {
   position: absolute;
   filter: blur(1.5px);
-  /* backdrop-filter: blur(10px); */
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
-  /* opacity: 0.5; */
   overflow: hidden;
   pointer-events: none;
 }
@@ -144,8 +134,6 @@ html {
 }
 
 .main__section1--button {
-  /* width: 150px;
-  height: 25px; */
   padding: 15px 50px;
   border-radius: 10px;
   background-color: var(--ligth-gold-100);
@@ -181,16 +169,12 @@ html {
 
 .main__section2--gallery {
   position: relative;
-  /* padding: 50px; */
-  /* justify-content: center; */
-  /* display: flex; */
 }
 
 /*animation*/
 
 .main__section2--gallery {
   display: flex;
-  /* left: calc(50% - 19rem); */
 }
 
 .card__gallery {
@@ -234,7 +218,6 @@ html {
 
 .main__section2--about {
   width: 50%;
-  /* align-items: center; */
   justify-content: center;
   gap: 30px;
   text-align: justify;
@@ -332,7 +315,6 @@ html {
 }
 
 .ms4h2container {
-  /* rotate: -90deg; */
   width: 50px;
   height: 50px;
   position: relative;
@@ -341,7 +323,6 @@ html {
 
 div > .main__section4--h2 {
   rotate: -90deg;
-  /* color: white; */
   left: -170px;
   min-width: max-content;
   position: absolute;
@@ -349,10 +330,6 @@ div > .main__section4--h2 {
   font-weight: 800;
   font-size: var(--txt-1);
   color: var(--ligth-blue-100);
-  /* margin-top: 120px; */
-  /* line-height: 6; */
-
-  /* width: ; */
 }
 
 .ms4d__card--img {
@@ -363,16 +340,19 @@ div > .main__section4--h2 {
 
 .ms4d__card--img > img {
   transition: scale 0.7s;
+  &:hover {
+    scale: 1.1;
+  }
 }
 
-.ms4d__card--img > img:hover {
+/* .ms4d__card--img > img:hover {
   scale: 1.1;
-}
+} */
 
 .ms4d__card--equipo {
   position: absolute;
   bottom: calc(50% - 150px);
-  left: calc(50% - 30px);
+  left: calc(50% - 50px);
   color: var(--ligth-gold-100);
   font-weight: 700;
   text-align: center;
@@ -397,7 +377,6 @@ div > .main__section4--h2 {
 }
 
 /*formulario contacto*/
-
 .main__contacto {
   padding: 100px 50px;
   width: 100%;
@@ -458,10 +437,7 @@ div > .main__section4--h2 {
 .form__label > input:focus ~ span {
   transform: translateX(0) translateY(-34px);
   font-size: var(--txt-6);
-  /* background-color: var(--ligth-white-100) !important; */
   padding: 0 3px;
-  /* border-left: 1px solid var(--dark-black-100);
-  border-right: 1px solid var(--dark-black-100); */
   color: var(--ligth-white-100);
 }
 
@@ -471,7 +447,6 @@ div > .main__section4--h2 {
 }
 
 .form__btn button {
-  /* max-width: 250px; */
   padding: 10px;
   border-radius: var(--radius-2);
   background-color: var(--ligth-gold-100);
@@ -483,6 +458,14 @@ div > .main__section4--h2 {
 .form__btn button:hover {
   cursor: pointer;
   box-shadow: 7px 7px 10px 2px var(--ligth-gold-200);
+}
+
+.form__label--promotions {
+  gap: 15px;
+}
+
+.form__label--promotions > span {
+  text-transform: capitalize;
 }
 
 .radio__container {
@@ -522,7 +505,6 @@ input:checked + .form__label--radio {
     rgba(103, 0, 0, 1) 100%
   );
   align-items: center;
-  /* font-size: var(--txt-); */
   font-size: 20px;
 }
 
@@ -575,7 +557,6 @@ input:checked + .form__label--radio {
   }
 
   .ms4h2container {
-    /* rotate: -90deg; */
     width: 100%;
     height: 50px;
     position: static;
@@ -584,7 +565,6 @@ input:checked + .form__label--radio {
 
   div > .main__section4--h2 {
     rotate: 0deg;
-    /* color: white; */
     text-align: center;
     position: static;
     min-width: max-content;
@@ -677,6 +657,10 @@ input:checked + .form__label--radio {
   }
 }
 @media (max-width: 488px) {
+  .ulnav__li {
+    font-size: var(--txt-6);
+  }
+
   .main__section1 {
     padding: 15px 0;
     margin: 10px 0;

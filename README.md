@@ -14,22 +14,25 @@ La aplicación web ofrece información sobre la barbería, sus servicios, el equ
 # Capturas de Pantalla
 
 <p  align="center">
-    <img src="https://i.imgur.com/cuBbBwA.jpeg" alt="HomePage" width=50% />
-    <img src="https://i.imgur.com/9hOQ5QE.jpeg" alt="HomePage" width=50% />
-    <img src="https://i.imgur.com/AD9jtjn.jpeg" alt="HomePage" width=50% />
+    <img src="https://i.imgur.com/cuBbBwA.jpeg" alt="page1" width=50% />
+    <img src="https://i.imgur.com/9hOQ5QE.jpeg" alt="page2" width=50% />
+    <img src="https://i.imgur.com/AD9jtjn.jpeg" alt="page3" width=50% />
+    <img src="https://i.imgur.com/uNpEzG9.jpeg" alt="page4" width=50% />
+    <img src="https://i.imgur.com/ENaLsah.jpeg" alt="pagemobile1" width=50% />
+    <img src="https://i.imgur.com/0YAdi1S.jpeg" alt="pagemobile2" width=50% />
     
 </p>
 
 ## Integrantes del grupo
 
-[Javier Espindola](https://github.com/Micolash89) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/javier-espindola/)
-[]()
-[]()
-[]()
+- [Javier Espindola](https://github.com/Micolash89) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/javier-espindola/)
+- [Buron Javier Alejandro](https://github.com/javitibu) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/javier-alejandro-buron-0732141b2)
+- [Aramayo Juan Jose
+  ]()
 
 ## Profesor
 
-[Roberto Perez](https://github.com/robermau) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/roberto-mauro-perez-olivera-206304176/)
+- [Roberto Perez](https://github.com/robermau) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/roberto-mauro-perez-olivera-206304176/)
 
 ## Uso
 

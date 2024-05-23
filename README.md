@@ -6,6 +6,10 @@ Este proyecto es una aplicación web para una barbería o peluquería, desarroll
 
 La aplicación web ofrece información sobre la barbería, sus servicios, el equipo de trabajo y la posibilidad de agendar un horario.
 
+## Deploy GitHub Pages
+
+- [Link del Proyecto](https://micolash89.github.io/proyecto-cac-1/)
+
 ## Tecnologías Utilizadas
 
 - HTML5

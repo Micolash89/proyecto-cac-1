@@ -10,6 +10,7 @@ La aplicación web ofrece información sobre la barbería, sus servicios, el equ
 
 - HTML5
 - CSS3
+- JS
 
 # Capturas de Pantalla
 

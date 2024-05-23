@@ -122,7 +122,7 @@
             <div class="main__section4--div ms4d flexRow">
                 <div class="ms4d__card flexColum">
                     <div class="ms4d__card--img"><img loading="lazy" src="images/Rectangle17.png" alt="">
-                        <span class="ms4d__card--equipo">Lucas Silva</span>
+                        <span class="ms4d__card--equipo">Aramayo Juan</span>
                     </div>
                     <div class="ms4d__card--iconos flexRow">
                         <i class="fa-brands fa-instagram"></i>
@@ -158,7 +158,7 @@
 
         <section class="main__contacto flexColum" id="contact">
             <h2 class="main__contacto--h2">Agendar Horario</h2>
-            <form class="main__contacto--form form flexColum" action="" method="post">
+            <form class="main__contacto--form form flexColum" action="" method="post" id="form">
                 <div class="flexColum">
 
 
@@ -219,7 +219,7 @@
                         </select>
                     </label>
                     <label class="form__label--promotions flexRow" for="promotions">
-                        <input required type="checkbox" id="promotions">
+                        <input type="checkbox" id="promotions">
                         <span>
                             Recibir promociones
                         </span>
@@ -230,6 +230,8 @@
                     <button type="submit">enviar</button>
                     <button type="reset">reset</button>
                 </div>
+
+                <span class="hidden" id="successMessage">✅ se envio el fomulario correctamente</span>
             </form>
         </section>
     </main>
@@ -254,6 +256,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/9bfe6d5a08.js" crossorigin="anonymous"></script>
+    <script src="js/javaScript.js"></script>
 </body>
 
 </html>

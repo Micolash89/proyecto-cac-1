@@ -345,10 +345,6 @@ div > .main__section4--h2 {
   }
 }
 
-/* .ms4d__card--img > img:hover {
-  scale: 1.1;
-} */
-
 .ms4d__card--equipo {
   position: absolute;
   bottom: calc(50% - 150px);
@@ -525,6 +521,20 @@ input:checked + .form__label--radio {
 .footer__redesSociales i:hover {
   cursor: pointer;
   color: var(--ligth-gold-100);
+}
+
+/*js*/
+.error {
+  border: 1px solid var(--dark-red-100);
+  outline: 5px solid var(--dark-red-100);
+}
+
+.okey {
+  outline: 5px solid var(--dark-green-100);
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 1204px) {
